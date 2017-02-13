@@ -11,9 +11,3 @@ Característica: UserSignup
     Cuando un usuario se registra con información válida
     Y intenta iniciar sesión
     Entonces no puede
-
-  Escenario: registro con información válida sin activación
-  
-    Cuando un usuario se registra con información válida
-    Y intenta iniciar sesión
-    Entonces no puede

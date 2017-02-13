@@ -4,13 +4,6 @@ Dado(/^un usuario michael que tiene un micropost$/) do
   @archer = FactoryGirl.create(:archer)
 end
 
-Dado(/^un usuario michael que tiene 100 microposts$/) do
-  @michael = FactoryGirl.create(:michael)
-  100.times do 
-    @michael.microposts.create(content: "Hola")
-  end
-end
-
 Cuando(/^el usuario se loguea$/) do
   log_in_as(@michael.email, 'password', 1)
   visit '/'

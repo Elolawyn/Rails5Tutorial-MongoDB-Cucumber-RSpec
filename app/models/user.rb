@@ -40,11 +40,11 @@ class User
   #end
 
   def feed
-    posts = self.microposts.all
+    posts = self.microposts
     self.following.each do |user_siguiendo|
-      posts = posts + user_siguiendo.microposts.all
+      posts = posts + user_siguiendo.microposts
     end
-    #if posts.count >= 2 then posts = posts.sort { |x, y| y.created_at <=> x.created_at } end
+    if posts.count >= 2 then posts = posts.sort { |x, y| y.created_at <=> x.created_at } end
     return posts
   end
 

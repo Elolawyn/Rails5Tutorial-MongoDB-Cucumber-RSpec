@@ -15,11 +15,11 @@ gem 'coffee-rails',             '4.2.1'
 gem 'jquery-rails',             '4.1.1'
 gem 'turbolinks',               '5.0.1'
 gem 'jbuilder',                 '2.4.1'
-gem 'mongoid',                  '~> 6.0.0'
+gem 'mongoid',                  '6.0.3'
 gem 'faker',                    '1.6.6'
-gem 'will_paginate_mongoid'
+gem 'will_paginate_mongoid',    '2.0.1'
 gem 'bootstrap-will_paginate',  '0.0.10'
-gem 'carrierwave-mongoid'
+gem 'carrierwave-mongoid',      '0.10.0'
 gem 'mini_magick',              '4.5.1'
 gem 'fog',                      '1.38.0'
 
@@ -35,12 +35,12 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'rails-controller-testing'
-  gem 'factory_girl_rails'
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
+  gem 'rspec-rails',              '3.5.2'
+  gem 'capybara',                 '2.12.0'
+  gem 'rails-controller-testing', '1.0.1'
+  gem 'factory_girl_rails',       '4.8.0'
+  gem 'database_cleaner',         '1.5.3'
+  gem 'cucumber-rails',           '1.4.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
